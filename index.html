@@ -1,108 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Supi Arianti</title>
+    
+    <!-- Title & Basic Metadata -->
+    <title>Profil Diri - Supi Arianti</title>
+    <meta name="description" content="Halaman profil diri dan CV interaktif Supi Arianti, mahasiswa Teknik Informatika UIN Sunan Gunung Djati Bandung.">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Profil Diri - Supi Arianti">
+    <meta property="og:description" content="Halaman profil diri dan CV interaktif Supi Arianti, mahasiswa Teknik Informatika UIN Sunan Gunung Djati Bandung.">
+    <meta property="og:image" content="assets/WhatsApp Image 2022-11-29 at 17.00.26.jpeg">
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
             background-color: #f4f4f4;
+            color: #333;
         }
         .container {
             max-width: 800px;
             margin: auto;
             background: #fff;
-            padding: 20px;
+            padding: 25px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
-        h1, h2 {
-            color: #333;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .header {
+        header {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
+            border-bottom: 2px solid #77aaff;
+            padding-bottom: 20px;
         }
-        .header .photo {
+        header .photo {
             margin-right: 20px;
         }
-        .header .photo img {
-            width: 150px;
-            height: 150px;
+        header .photo img {
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
         }
-        .section {
+        nav {
             margin-bottom: 20px;
+            background: #eef4ff;
+            padding: 10px;
+            border-radius: 5px;
         }
-        .section h2 {
+        nav a {
+            margin-right: 15px;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin-bottom: 25px;
+        }
+        section h2 {
+            color: #333;
             border-bottom: 2px solid #77aaff;
-            padding-bottom: 10px;
+            padding-bottom: 5px;
         }
-        .section ul {
+        section h3 {
+            margin-bottom: 2px;
+            color: #444;
+        }
+        ul {
             list-style-type: none;
             padding: 0;
         }
-        .section ul li {
-            background: #f4f4f4;
+        ul li {
+            background: #f9f9f9;
             margin: 5px 0;
             padding: 10px;
             border-left: 5px solid #77aaff;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #77aaff;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            color: #666;
+            border-top: 1px solid #ddd;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <div class="header">
+        <!-- Structural Semantic Header -->
+        <header>
             <div class="photo">
-                <img src="assets/WhatsApp Image 2022-11-29 at 17.00.26.jpeg" alt="Foto Supi Arianti">
+                <img src="assets/WhatsApp Image 2022-11-29 at 17.00.26.jpeg" alt="Foto Profil Supi Arianti">
             </div>
             <div>
                 <h1>Supi Arianti</h1>
-                <p><strong>Email:</strong> supayzz03@gmail.com</p>
+                <p><strong>Email:</strong> <a href="mailto:supayzz03@gmail.com">supayzz03@gmail.com</a></p>
                 <p><strong>Telepon:</strong> 082321424941</p>
-                <p><strong>Alamat:</strong> Kp. Babakan Garut, Kecamatan Cidaun, Kabupaten Cianjur, Jawa Barat, Indonesia</p>
+                <p><strong>Alamat:</strong> Kp. Babakan Garut, Kecamatan Cidaun, Kabupaten Cianjur, Jawa Barat</p>
             </div>
-        </div>
+        </header>
 
-        <div class="section">
-            <h2>Profil</h2>
-            <p>Mahasiswa S1 di UIN Bandung dengan latar belakang pendidikan di SMK jurusan Agribisnis Pengolahan Hasil Pertanian (APHP). Memiliki pengalaman PKL selama 6 bulan di Nazila Cake & Bakery dan Dapur APHP.</p>
-        </div>
+        <!-- Navigation Element -->
+        <nav>
+            <a href="#profil">Profil</a>
+            <a href="#pendidikan">Pendidikan</a>
+            <a href="#matakuliah">Mata Kuliah</a>
+            <a href="https://uinsgd.ac.id" target="_blank" rel="noopener noreferrer">Website Kampus</a>
+        </nav>
 
-        <div class="section">
-            <h2>Pendidikan</h2>
-            <p>UIN Sunan Gunung Djati Bandung, S1 Teknik Informatika (2022 - Sekarang)</p>
-            <p>SMK SMKN 1 Cidaun, Agribisnis Pengolahan Hasil Pertanian (2019 - 2022)</p>
-        </div>
+        <!-- Main Content Area -->
+        <main>
+            <section id="profil">
+                <h2>Profil Singkat</h2>
+                <p>Mahasiswa S1 Teknik Informatika di UIN Sunan Gunung Djati Bandung dengan latar belakang pendidikan SMK di bidang Agribisnis Pengolahan Hasil Pertanian (APHP). Memiliki minat pada pengembangan perangkat lunak dan sistem informasi.</p>
+            </section>
 
-        <div class="section">
-            <h2>Pengalaman Kerja</h2>
-            <p>Nazila Cake & Bakery, PKL (3 bulan)</p>
-            <p>Lab APHP, PKL (3 bulan)</p>
-        </div>
+            <section id="pendidikan">
+                <h2>Pendidikan</h2>
+                <h3>UIN Sunan Gunung Djati Bandung</h3>
+                <p>S1 Teknik Informatika (2022 - Sekarang)</p>
+                
+                <h3>SMKN 1 Cidaun</h3>
+                <p>Agribisnis Pengolahan Hasil Pertanian (2019 - 2022)</p>
+            </section>
 
-        <div class="section">
-            <h2>Keterampilan</h2>
-            <ul>
-                <li>Pengolahan Hasil Pertanian</li>
-                <li>Manajemen Produksi</li>
-                <li>Komunikasi Efektif</li>
-            </ul>
-        </div>
+            <section id="pengalaman">
+                <h2>Pengalaman Kerja / PKL</h2>
+                <ul>
+                    <li><strong>Nazila Cake & Bakery:</strong> Praktik Kerja Lapangan (3 Bulan)</li>
+                    <li><strong>Lab APHP SMKN 1 Cidaun:</strong> Praktik Kerja Lapangan (3 Bulan)</li>
+                </ul>
+            </section>
 
-        <div class="section">
-            <h2>Bahasa</h2>
-            <ul>
-                <li>Bahasa Indonesia (Lancar)</li>
-            </ul>
-        </div>
+            <!-- Table Requirement -->
+            <section id="matakuliah">
+                <h2>Tabel Mata Kuliah Semester Ini</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Kode MK</th>
+                            <th>Mata Kuliah</th>
+                            <th>SKS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>IF301</td>
+                            <td>Pemrograman Web</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>IF302</td>
+                            <td>Base Data & Sistem Informasi</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>IF303</td>
+                            <td>Rekayasa Perangkat Lunak</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="keterampilan">
+                <h2>Keterampilan</h2>
+                <ul>
+                    <li>Pengembangan Web (HTML, CSS)</li>
+                    <li>Pengolahan Hasil Pertanian</li>
+                    <li>Manajemen Produksi & Komunikasi</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Structural Semantic Footer -->
+        <footer>
+            <p>&copy; 2026 Supi Arianti. Dibuat untuk Tugas Pemrograman Web.</p>
+        </footer>
     </div>
+
 </body>
 </html>
